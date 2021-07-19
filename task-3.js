@@ -1,25 +1,9 @@
 // 3.3 Вывести количество элементов соответствующих условию!
-let array = [5,7,9,11,13,15,17,19]
 
-TestFunction = (arr, val) => {
-  let newArray = [];
+let array = [10, 20, 130, 70, 50, 80, 12];
 
-  array.forEach((value, index) => {
-    if(value > val) {
-      newArray.push(value)}
-  });
-  return lengthFunction(newArray);
+const arraySearch = (arr, num) => {
+  return arr.filter((currentValue, index) => currentValue > num)
 }
 
-lengthFunction =(arr) => {
-  let count = 0;
-
-  array.forEach((value, index)=> {
-    count = index + 1;
-  });
-
-  return count;
-}
-
-const t = TestFunction(array,5)
-console.log(t)
+console.log( arraySearch(array, 50));

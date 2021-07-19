@@ -1,25 +1,18 @@
-let array = [5,1,7,9,11,13,15,17,19]
+// По результату выполнения вернуть все номера элементов массива, которые меньше второго параметра.
 
-TestFunction = (arr, val) => {
-  // let newArray = [];
+let array = [10, 20, 130, 70, 80, 12];
 
-  array.forEach((value, index) => {
-    if(value < val) {
-      console.log(index)
+
+const arraySearch = (arr, num) => {
+  const indexArr = []
+  arr.forEach((currentValue, index) => {
+    if(currentValue < num) {
+      indexArr.push(index)
     }
-  });
-  // return lengthFunction(newArray);
-};
+  })
 
-lengthFunction =(arr) => {
-  let count = 0;
-
-  array.forEach((value, index)=> {
-    count = index + 1;
-  });
-
-  return count;
+  return indexArr
 }
 
-const t = TestFunction(array,5)
-// console.log(t)
+console.log( arraySearch(array, 50));
+
