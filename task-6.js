@@ -22,11 +22,10 @@ let collectionArr =[
   ];
 
 const testFunction = (arr, val) => {
-  collectionArr.forEach(item =>{
-    if (item.name === val) {
-      console.log(item)
-    }
-  })
+  let newArr = collectionArr.filter(item =>(
+    item.name === val
+  ))
+  console.log(newArr);
 }
 
 
