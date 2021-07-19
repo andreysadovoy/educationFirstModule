@@ -24,7 +24,7 @@ let collectionArr =[
 
 const testFunction = (arr, val, val2) => {
   arr.forEach(value =>{
-    if (value.name === val || value.year === val2) {
+    if (value.name === val && value.year === val2) {
       console.log(value)
     }
   });
