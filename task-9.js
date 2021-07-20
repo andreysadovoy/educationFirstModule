@@ -22,16 +22,12 @@ let collectionArr =[
   }
 ];
 
-const testFunction = (arr, val, val2) => {
-  arr.forEach(value =>{
-    if (value.name === val && !(value.year === val2)) {
-      console.log(value)
-    }
-  });
-}
+const testFunction = (arr, val,) => {
+  return arr.filter(value => !(value.year === val))};
 
 
 
 
-const t = testFunction(collectionArr, 'Ford',1990);
+
+const t = testFunction(collectionArr,1969);
 console.log(t);
