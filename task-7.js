@@ -1,4 +1,5 @@
-
+// В функцию передаем три параметра: массив и два значение.
+//   По результату выполнения вернуть все элементы массива, которые равны второму или третьему параметру.
 
 let array = [12,24,38,64,128,364,425,1028]
 let collectionArr =[
@@ -23,8 +24,7 @@ let collectionArr =[
 ];
 
 const testFunction = (arr, val, val2) => {
-  return arr.filter(value =>
-    (value === val || value === val2));
+  return arr.filter(value =>(value === val || value === val2));
 }
 
 
