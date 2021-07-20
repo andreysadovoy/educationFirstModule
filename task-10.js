@@ -8,26 +8,40 @@ let collectionArr =[
     year: 1969
   },
   {
-    name: "Ferrari",
-    model: "Mustang",
-    year: 1969
-  },{
-    name: "BMW",
+    name: "Ford",
     model: "Mustang",
     year: 1969
   },{
     name: "Ford",
     model: "Mustang",
-    year: 1990
+    year: 1969
+  },{
+    name: "Ford",
+    model: "Mustang",
+    year: 1969
   }
 ];
 
 const testFunction = (arr, val, val2) => {
-  return arr.filter(value => !(value.year === val))};
+  let result = false;
+
+  arr.forEach(value => {
+    if (value.name === val && value.year === val2) {
+      result = true;
+    } else {
+      result = false;
+      return result;
+    }
+
+  })
+  return result
+
+}
 
 
 
 
 
-const t = testFunction(collectionArr,1969,'Ford');
+
+const t = testFunction(collectionArr,'Ford',1969);
 console.log(t);
