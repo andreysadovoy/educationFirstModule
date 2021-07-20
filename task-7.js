@@ -23,12 +23,8 @@ let collectionArr =[
 ];
 
 const testFunction = (arr, val, val2) => {
-  arr.forEach(value =>{
-    if (value === val || value === val2) {
-
-      console.log(value)
-    }
-  });
+  return arr.filter(value =>
+    (value === val || value === val2));
 }
 
 

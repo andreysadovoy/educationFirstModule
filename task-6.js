@@ -22,17 +22,17 @@ let collectionArr =[
   ];
 
 const testFunction = (arr, val) => {
-  let newArr = collectionArr.filter(item =>(
+  return arr.filter(item =>(
     item.name === val
   ))
-  console.log(newArr);
+
 }
 
 
 
 
-const t = testFunction(collectionArr, "Ford");
-console.log(t);
+
+console.log(testFunction(collectionArr, "Ford"));
 
 
 
