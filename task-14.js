@@ -9,10 +9,8 @@ arr.forEach(value => {
     max = value;
   }
 })
-
   return max
 }
-
 
 const t = testFunction(array);
 console.log(t)

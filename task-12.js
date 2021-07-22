@@ -26,7 +26,7 @@ let collectionArr =[
 
 const testFunction = (arr, val) => {
   let result = false;
-  arr.forEach(value => {
+  arr.some(value => {
     if (value.name === val) {
       result = true;
     }
